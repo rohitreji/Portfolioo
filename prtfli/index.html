@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Portfolio</title>
+    
+<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+   
+</head>
+<body>
+    
+    <div class="container">
+          <nav class="navbar">
+       <img src="elements/loGo.jpg" class = logo>
+        
+        <ul id="sidemenu">
+       <li> <a href="#home"class = "active">Home</a></li>
+        <li> <a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#Portfolio">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+        <i class="ri-close-line" id="close-icon" onclick="closemenu()"></i>
+        </ul>
+        <i class="ri-menu-line" id="menu-icon" onclick="openMenu()"></i>
+    </nav>
+        
+        <header class="animated">
+           
+       
+  
+   
+    <section class = "home animated" id="home" >
+      
+       <div class="home-left">
+        <div class="home-detail">
+            
+             
+            <h1>Hi, I'm <span>Rohit reji</span></h1>
+            <h2>Python Beginner | UI/UX Learner | Teaching Computer Science Concepts | Exploring AI & Tech That Matters</h2>
+            
+            
+         
+            <div class="download-social"> 
+            
+    <a href="elements/Rohit Reji.pdf" class="btn" download>Download CV</a>
+            
+            <div class="social-icon"> 
+            <a href ="https://www.facebook.com/rohit.reji15" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+            <a href ="https://www.instagram.com/rohit_reji?igsh=dnRtZ3E3NHU5cHdn"target="_blank"><i class="ri-instagram-fill"></i></a>
+            <a href ="https://www.linkedin.com/in/rohit-reji-455a67249/"target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="home-right">
+            
+        </div>
+        </header>
+        </section>
+    <!--------------ABOUT SECTION----------------->
+    
+    
+    <section class="about animated" id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-image">
+                <img src="elements/about me.jpg" >
+             </div>
+             <div class="about-details">
+                <h1 class="sub-title"> About Me</h1>
+                <p><i> Hi, I'm Rohit Reji, a passionate Computer Science student at the University of Calicut. With a solid foundation in programming languages like Python, Java, and C, I love turning ideas into digital solutions. I thrive on helping others learn and have a knack for simplifying complex technical concepts—something I actively do through teaching and mentoring.
+</i></p>
+<div class="tab-titles">
+<p class="tab-links" onclick="opentab(event, 'Achievements')">Achievements</p>
+<p class="tab-links active-link" onclick="opentab(event, 'Skills')">Skills</p>
+<p class="tab-links" onclick="opentab(event, 'Education')">Education</p> 
+</div>
+<div class="tab-contents-wrapper" >
+    <!------------------------------------------------------------------------------SKILLS--------------------------------------------------------------------------------------------->    
+
+<div class="tab-contents active-content" id="Skills">
+
+  <div class="skills-horizontal">
+  <div class="skill-box">
+    <span class="skill-title">Programming Languages</span>
+    <span class="skill-value">Python, Java, JavaScript, PHP</span>
+  </div>
+  <div class="skill-box">
+    <span class="skill-title">Web & Frameworks</span>
+    <span class="skill-value">Django, React</span>
+  </div>
+  <div class="skill-box">
+    <span class="skill-title">Database</span>
+    <span class="skill-value">MySQL</span>
+  </div>
+  <div class="skill-box">
+    <span class="skill-title">Mobile Development</span>
+    <span class="skill-value">Android Programming</span>
+  </div>
+  <div class="skill-box">
+    <span class="skill-title">Tools</span>
+    <span class="skill-value">Figma, Canva</span>
+  </div>
+</div>
+</div>
+
+
+    <div class="tab-contents" id="Achievements">
+  <div class="achievements-scroll-container">
+  <!------------------------------------------------------------------------------ACHIEVEMENTS--------------------------------------------------------------------------------------------->
+    <div class="achievement-card">
+      <img src="elements/MR CCST.jpg" alt="Mr. CCST"onclick="openModal(this.src)">
+      <h4>Mr. CCST</h4>
+      <p>Awarded for personality and charisma at Cherpulassery College of Science & Technology.</p>
+    </div>
+    <div class="achievement-card">
+      <img src="elements/best manager.jpg" alt="Best Manager"onclick="openModal(this.src)">
+      <h4>Participate in Best Manager Of Kerala</h4>
+      <p>Reached Round 4 in Kerala’s prestigious best manager contest organized by GIIMS.</p>
+    </div>
+    <div class="achievement-card">
+      <img src="elements/best actor.jpg" alt="BEST ACTOR"onclick="openModal(this.src)">
+      <h4>Best Actor</h4>
+      <p>Awarded Best Actor in the college short film competition for outstanding performance and screen presence.</p>
+    </div>
+    <div class="achievement-card">
+  <img src="elements/BEST DOCUMENTATION.jpg" alt="Best NSS Member"onclick="openModal(this.src)">
+  <h4>Best NSS Member</h4>
+  <p>Recognized for active participation in social service initiatives through the National Service Scheme (NSS).</p>
+</div>
+
+<div class="achievement-card">
+  <img src="elements/WALL PAINTING LEAD.jpg" alt="Wall Painting Project Lead"onclick="openModal(this.src)">
+  <h4>Wall Painting Project Lead</h4>
+  <p>Led the college wall painting project — coordinated students, managed budget, and directed creative execution.</p>
+</div>
+</div>
+</div>
+  <!------------------------------------------------------------------------------ACHIEVEMENTS--------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------EDUCATION--------------------------------------------------------------------------------------------->
+<div class="tab-contents" id="Education">
+  <div class="education-scroll-container">
+     <div class="education-timeline">
+  <div class="edu-card">
+    <div class="edu-year">2022 - 2025</div>
+    <div class="edu-details">
+      <h4>Cherpulassery College of Science & Technology</h4>
+      <p>Bachelor of Computer Applications (BCA), affiliated with the University of Calicut</p>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-year">2021 - 2022</div>
+    <div class="edu-details">
+      <h4>Gitarattan Jindal Public School, New Delhi</h4>
+      <p>Higher Secondary Education in Humanities<br><i>Aggregate: 83% (CBSE)</i></p>
+    </div>
+    </div>
+  
+
+  <div class="edu-card">
+    <div class="edu-year">2020 - 2021</div>
+    <div class="edu-details">
+      <h4>Gitarattan Jindal Public School, New Delhi</h4>
+      <p>Secondary Education (Class 10)<br><i>Score: 69% (CBSE)</i></p>
+    </div>
+  </div>
+  </div>
+
+
+</div>
+
+
+</div>
+
+    </section>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+<!-------------------------------------------------------------------SERVICE----------------------------------------------------------->
+
+<section id="service">
+  <div class="container">
+    <h1 class="sub-title">Services</h1>
+    <div class="service-list">
+      <!----------------------------------------------------- Service items-------------------------------------------------------- -->
+      <div>
+        <i class="ri-pages-line"></i>
+        <h2>Web Development</h2>
+        <p>Creating responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+        <a href="#">Learn More</a>
+      </div>
+<div>
+  <i class="ri-file-code-line"></i>
+        <h2>Python Programming</h2>
+        <p>I write efficient and clean Python code for automation scripts, basic data processing, and beginner-level desktop apps or tools. </p>
+        <a href="#">Learn More</a>
+      </div>
+      
+      <div>
+        <i class="ri-crop-fill"></i>
+        <h2>UI/UX Design</h2>
+        <p>I design clean, user-friendly interfaces using Figma and Canva, focused on intuitive user experiences and modern design principles..</p>
+        <a href="#">Learn More</a>
+    </div>
+      <div>
+        <i class="ri-presentation-fill"></i>
+        <h2>Technical Mentoring / Teaching</h2>
+        <p>I simplify complex computer science concepts for students, making learning engaging and accessible.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="ri-projector-fill"></i>
+        <h2>Academic Project Assistance</h2>
+        <p>I guide students in structuring their BCA/MCA-level projects, from backend logic to presentation support.</p>
+        <a href="#">Learn More</a>
+        </div>
+      <div> 
+        <i class="ri-mic-2-fill"></i>
+        <h2>Event Hosting</h2>
+        <p>I host and manage events, ensuring smooth execution and engaging experiences for participants.</p>
+        <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="ri-edit-fill"></i>
+        <h2>Content Writing & Documentation</h2>
+        <p>I prepare high-quality technical documentation, reports, and academic write-ups — including for NSS, NAAC, and project portfolios.</p>
+        <a href="#">Learn More</a>
+      </div>
+      </div>
+</section>
+<!----------------------------------------------------- Service items end-------------------------------------------------------- -->
+<!-------------------------------------------------------------------PORTFOLIO----------------------------------------------------------->
+
+  <section class ="Portfolio" id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">Works</h1>
+
+   <div class="work-list">
+  <div class="work"><img src="elements/movie tox interface.png" alt="Work 1">
+    <div class="layer"><h3>Movie Recommendation System</h3>
+    <p> Developed a Movie Recommendation System using Django and MySQL that suggests films based on user preferences and genres</p>
+  <a href="#"><i class="ri-share-2-line"></i></a>
+  </div></div>
+
+  <div class="work"><img src="elements/work 2.jpg" alt="Work 2">
+  <div class="layer">
+    <h3>Wall Painting Project</h3>
+    <p>Led a college wall painting project, managing design, student coordination, and execution to enhance campus aesthetics.</p>
+    <a href="#"><i class="ri-share-2-line"></i></a>
+    </div></div>
+
+      <div class="work"><img src="elements/work 3.jpg" alt="Work 3"> 
+      <div class="layer">
+      <h3>Street Play coordination:</h3>
+      <p>Coordinated a college street play event, overseeing script, rehearsal, and team performance to promote social awareness.</p>
+      <a href="#"><i class="ri-share-2-line"></i></a> 
+      </div> </div>
+
+       <div class="work"><img src="elements/Screenshot 2025-05-16 130046.png" alt="Work 4"> 
+      <div class="layer">
+        <h3>Portfolio website</h3>
+        <p>Designed and developed a personal portfolio website to showcase my skills, projects, and achievements using HTML, CSS, and JavaScript.</p>
+        <a href="#"><i class="ri-share-2-line"></i></a>
+       </div>
+       </div>
+  <!----------------------------------- more .work items ------------------------------------>
+</div>
+<a href="#" class="see-more-btn">See more</a>
+</div>
+  
+</section>
+<!-----------------------------------------------------------------CONTACTS---------------------------------------------------------------->
+<section class="contact_us" id="contact">
+  <div class="container">
+    <div class="contact-row">
+      <div class="contact-left">
+        <h1 class ="sub-title">Contact Me</h1>
+        <p><i class="ri-send-plane-fill"></i>r4rohitreji@gmail.com</p>
+        <p><i class="ri-phone-fill"></i>+91 6395209853</p>
+        <div class="social-icon">
+          <a href ="https://www.facebook.com/rohit.reji15" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+          <a href ="https://www.instagram.com/rohit_reji?igsh=dnRtZ3E3NHU5cHdn"target="_blank"><i class="ri-instagram-fill"></i></a>
+          <a href ="https://www.linkedin.com/in/rohit-reji-455a67249/"target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+
+</form>
+            <div id="form-alert" class="form-alert" style="display: none;">
+  Message sent successfully!
+</div>
+          </div>
+
+         
+         <div class="copyright">
+          <p>Copyright &copy; 2025 Rohit Reji. All rights reserved.</p>
+          <p>Designed by Rohit Reji</p>
+         </div>
+
+</section>
+
+<script>
+  // Tab switching function
+  function opentab(event, tabName) {
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+
+    for (let i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].classList.remove("active-content");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-content");
+  }
+
+  // Modal image viewer
+  function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+
+  // Toggle hamburger menu
+  function toggleMenu() {
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar ul');
+
+    if (navbar.style.display === 'block') {
+      navbar.style.display = 'none';
+      menuIcon.classList.remove('ri-close-line');
+      menuIcon.classList.add('ri-menu-line');
+    } else {
+      navbar.style.display = 'block';
+      menuIcon.classList.remove('ri-menu-line');
+      menuIcon.classList.add('ri-close-line');
+    }
+  }
+
+  // Side menu control (optional)
+  var sidemenu = document.getElementById("sidemenu");
+  function openMenu() {
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu() {
+    sidemenu.style.right = "-200px";
+  }
+
+  // Highlight nav link on click
+  const navLinks = document.querySelectorAll('.navbar ul li a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      navLinks.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Highlight nav link based on scroll position
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    let scrollPos = window.scrollY + 100;
+
+    sections.forEach(section => {
+      if (
+        section.offsetTop <= scrollPos &&
+        section.offsetTop + section.offsetHeight > scrollPos
+      ) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').substring(1) === section.getAttribute('id')) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  });
+
+ document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.achievements-scroll-container');
+    if (!container) return;
+
+    let scrollPosition = 0;
+    const scrollSpeed = 1; // pixels per tick
+    const scrollInterval = 40; // ms
+    let scrollTimer;
+
+    function scrollRight() {
+      scrollPosition += scrollSpeed;
+
+      // If we've scrolled past the end, reset to the beginning
+      if (scrollPosition >= container.scrollWidth - container.clientWidth) {
+        scrollPosition = 0;
+      }
+
+      container.scrollLeft = scrollPosition;
+    }
+
+    function startAutoScroll() {
+      scrollTimer = setInterval(scrollRight, scrollInterval);
+    }
+
+    function stopAutoScroll() {
+      clearInterval(scrollTimer);
+    }
+
+    // Start auto-scroll on load
+    startAutoScroll();
+
+    // Pause on hover
+    container.addEventListener('mouseenter', stopAutoScroll);
+    container.addEventListener('mouseleave', startAutoScroll);
+
+    // Pause on touch
+    container.addEventListener('touchstart', stopAutoScroll);
+    container.addEventListener('touchend', startAutoScroll);
+  });
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby5UBVCi1MMD91V4cXD0lavWItGXPyXPFRAzdqnZpDVyKGLGgThCkIhW7wocHKivlnpjw/exec'; // Replace with your real script URL
+  const form = document.forms['submit-to-google-sheet'];
+  const alertBox = document.getElementById('form-alert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        form.reset();
+        alertBox.style.display = 'block';
+        setTimeout(() => {
+          alertBox.style.display = 'none';
+        }, 3000);
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+
+
+
+
+
+            
+</body>    
+  
+
+
